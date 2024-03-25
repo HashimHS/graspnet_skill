@@ -1,18 +1,20 @@
-# Graspnet Skill
+# Intelligent Grasp Estimation for Collaborative Robot
 Prompt guided object picking as a skiros2 skill.
 
 ## About
-This repository contains an implementation of Contact Graspnet and Grounded SAM in ROS1. This skill uses the Grounded SAM model to detect the object and executes the picking task using the Contact_Graspnet model and Moveit package.
+This repository contains an implementation of  [Contact Graspnet](https://github.com/NVlabs/contact_graspnet) and [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything) in ROS1, as part of the Master's Thesis "Grasp Estimation for intelligent collaborative robot" in [LTH, Lund University](https://www.lth.se/). This skill uses the Grounded SAM model to detect the object and executes the picking task using the Contact_Graspnet model and Moveit package. 
+
+![image](https://github.com/HashimHS/graspnet_skill/blob/main/Demo.gif)
 
 ## Compatibility
 - Tested on ROS Noetic, might work with other ROS distributions.
 
 ## Requirements
 - ROS1
-- skiros2 ([skiros2](https://github.com/RVMI/skiros2))
-- contact_graspnet ([contact_graspnet](https://github.com/HashimHS/contact_graspnet))
-- grounding_sam_ros ([grounding_sam_ros](https://github.com/HashimHS/grounding_sam_ros))
-- moveit ([moveit](https://moveit.ros.org/install/))
+- [skiros2](https://github.com/RVMI/skiros2)
+- [Contact Graspnet](https://github.com/HashimHS/contact_graspnet)
+- [Grounding_sam_ros](https://github.com/HashimHS/grounding_sam_ros)
+- [moveit](https://moveit.ros.org/install/)
 
 ## Installation
 After installing the required packages above, follow these steps:
