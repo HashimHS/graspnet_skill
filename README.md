@@ -22,7 +22,7 @@ After installing the required packages above, follow these steps:
 1. Clone this repository:
     ```bash
     cd ~/catkin_ws/src
-    git clone
+    git clone https://github.com/HashimHS/graspnet_skill.git
     ```
 
 2. Add the skills to skiros2 by modifying the skill_mgr.launch file:
