@@ -4,7 +4,9 @@ Prompt guided object picking as a skiros2 skill.
 ## About
 This repository contains an implementation of  [Contact Graspnet](https://github.com/NVlabs/contact_graspnet) and [Grounded SAM](https://github.com/IDEA-Research/Grounded-Segment-Anything) in ROS1, as part of the Master's Thesis "Grasp Estimation for intelligent collaborative robot" in [LTH, Lund University](https://www.lth.se/). This skill uses the Grounded SAM model to detect the object and executes the picking task using the Contact_Graspnet model and Moveit package. 
 
-![image](https://github.com/HashimHS/graspnet_skill/blob/main/Demo.gif)
+<p align="center">
+  <img src="http://some_place.com/image.png" />
+</p>
 
 ## Compatibility
 - Tested on ROS Noetic, might work with other ROS distributions.
