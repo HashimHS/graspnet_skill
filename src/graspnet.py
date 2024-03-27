@@ -28,8 +28,8 @@ import tf2_ros
 import tf2_geometry_msgs
 
 from graspnet_skill.manipulation import Manipulator
-from graspnet_skill.perception import RGBListener, DepthListener, MLDetector
-from robotweek_skills.visualization_graspnet import show_image
+from graspnet_skill.perception import RGBListener, DepthListener
+from graspnet_skill.visualization_graspnet import show_image
 from grounding_sam_ros.srv import VitDetection, VitDetectionResponse
 
 
@@ -84,8 +84,6 @@ class detect_graspnet(PrimitiveBase):
         rgb = rgb_listener.get()
         depth = depth_listener.get().astype(np.float32) / 1000
         rospy.loginfo('Camera image received')
-
-        detector = MLDetector('localhost:50051', prompt=obj)
 
         
         # We segment the object from the background using Grounding Dino
